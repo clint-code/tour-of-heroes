@@ -43,3 +43,19 @@ h1 {
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .marvelRed{
+    color: #EC1D24;
+  }
+
+  .dcBlue{
+    color: #0074E8;
+  }
+
+  .marvelBadge{
+    background-color: #EC1D24;
+  }
+
+  .dcBadge{
+    background-color: #0074E8;
+  }

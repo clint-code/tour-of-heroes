@@ -8,14 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.HeroesComponent = void 0;
 var core_1 = require("@angular/core");
-var mock_heroes_1 = require("../mock-heroes");
 var HeroesComponent = /** @class */ (function () {
-    function HeroesComponent() {
-        //hero: Hero;
-        this.heroes = mock_heroes_1.HEROES;
+    function HeroesComponent(heroService) {
+        this.heroService = heroService;
+        this.heroes = [];
     }
     HeroesComponent.prototype.ngOnInit = function () {
-        console.log(this.heroes);
+        this.getHeroes();
+    };
+    HeroesComponent.prototype.getHeroes = function () {
+        var _this = this;
+        this.heroService.getHeroes().subscribe(function (heroes) { return _this.heroes = heroes; });
     };
     HeroesComponent.prototype.onSelect = function (hero) {
         this.selectedHero = hero;

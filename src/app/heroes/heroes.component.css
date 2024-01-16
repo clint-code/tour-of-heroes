@@ -5,14 +5,6 @@
     width: 15em;
   }
 
-  .marvelRed{
-    color: #EC1D24;
-  }
-
-  .dcBlue{
-    color: #0074E8;
-  }
-
   .heroes li {
     display: flex;
   }
@@ -66,14 +58,6 @@
     line-height: 1em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
-  }
-
-  .marvelBadge{
-    background-color: #EC1D24;
-  }
-
-  .dcBadge{
-    background-color: #0074E8;
   }
   
   .heroes .name {
